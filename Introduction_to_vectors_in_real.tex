@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Introduction to Vectors}
+\author{Sam Kantor \\ Instructor Dan Wolczuk}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}[theorem]{Example}
+
+
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\Large {Vectors in $\mathbb{R}^N $}
+\\
+\begin{theorem}
+$$  \mathbb{R}^n =
+ {\left[\begin{matrix}
+    X_i \\ \vdots \\
+    X_n
+\end{matrix}\right]} \, | \: X_i, \, \dots X_n \in \mathbb{R} $$
+
+\end{theorem}
+
+\Large {Sometimes to better understand vectors in $\mathbb{R}^n$, we can use points to visualize them.} \\
+
+$\vec{x} = {\left[\begin{matrix}
+    X_i \\ \vdots \\
+    X_n
+\end{matrix}\right]}$ is equivalent to ($x_i$, $\dots$, $x_n$)
+
+\begin{example}
+
+Vector $\vec{x} = {\left[\begin{matrix}
+    1 \\ 2
+\end{matrix}\right]}$ as point $(1,2)$
+
+\end{example}
+
+\Large {Vectors always start at the origin and end at the points it's defined by.}
+
+\begin{theorem}
+The set of vectors of the form $$\vec{x} = {\left[\begin{matrix}
+    s \\ t \\ 0
+\end{matrix}\right]}, s, t \in \mathbb{R}$$ are the set of all points of the form $(s, t, 0)$. Hence the plane in $\mathbb{R}^3$
+\end{theorem}
+
+\textbf{Definition}
+Let $\vec{x} = {\left[\begin{matrix}
+    X_i \\ \vdots \\ X_n
+\end{matrix}\right]}, \vec{y} = {\left[\begin{matrix}
+    Y_i \\ \vdots \\ Y_n
+\end{matrix}\right]} \in \mathbb{R}$, we say that $\vec{x}$ and $\vec{y}$ are \textbf{equal} and write $\vec{x} = \vec{y}$ \, if $x_i = y_i$ for all $i <= x <= y$. \\
+
+\textbf{Definition} \\
+We define addition by $\vec{x}$ + $\vec{y}$ \: = ${\left[\begin{matrix}
+    X_i &+ &Y_1 \\ & \vdots \\ X_n &+ &Y_n
+\end{matrix}\right]}$ \\
+
+For any real scalar $t \in \mathbb{R}$, we define scalar \\ multiplication by: $$t\vec{x} = {\left[\begin{matrix}
+    tx_i\\ \vdots \\ tx_n
+\end{matrix}\right]}$$
+
+\begin{example} - \\
+${\left[\begin{matrix}
+   1 \\ 2
+\end{matrix}\right]}$ +
+${\left[\begin{matrix}
+   2 \\ -3
+\end{matrix}\right]}$ = 
+${\left[\begin{matrix}
+   3 \\ -1
+\end{matrix}\right]}$
+\end{example}
+
+\begin{example} - \\
+$3\cdot{\left[\begin{matrix}
+   2 \\ 4
+\end{matrix}\right]}$ = 
+${\left[\begin{matrix}
+   6 \\ 12
+\end{matrix}\right]}$
+\end{example}
+
+\begin{example} - \\
+$(-1)\cdot{\left[\begin{matrix}
+   2 \\ 5
+\end{matrix}\right]}$ +
+$(\sqrt{2})\cdot {\left[\begin{matrix}
+   2 \\ \frac{1}{\sqrt{2}}
+\end{matrix}\right]}$ = 
+${\left[\begin{matrix}
+   tbd \\ tbd
+\end{matrix}\right]}$
+\end{example}
+
+\end{document}
