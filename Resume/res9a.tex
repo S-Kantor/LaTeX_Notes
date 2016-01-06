@@ -1,0 +1,101 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+%Allows changed margins
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+   
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\Huge\bf Sam Kantor}
+ \moveleft.5\hoffset\centerline{}
+ \begin{changemargin}{-3.1cm}{0.5cm} 
+ {https://play.google.com/store/apps/developer?id=Sam+Kantor \hspace{43 pt} https://github.com/S-Kantor}
+  \end{changemargin}
+% Draw a horizontal line 
+\begin{changemargin}{-3.4cm}{2.5cm} 
+ {\noindent\rule{17cm}{0.5pt} }\smallskip
+ \end{changemargin}
+
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{54 Loire Valley Avenue}
+ \moveleft.5\hoffset\centerline{Thornhill, ON L4J-8R8}
+ \moveleft.5\hoffset\centerline{Phone Number: (647) 713-3674}
+
+
+\begin{resume} 
+
+\section{EDUCATION} {\sl Honours Computer Science Coop}  \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                University of Waterloo, Waterloo, ON \\
+                Class of 2020 \\
+                
+ 
+\section{LANGUAGES} {\sl Proficient in:} Python, C, Racket, HTML5, CSS3 \\
+{\sl Familiar with: MySQL, Android, C++, \space \LaTeX} 
+ 
+				
+\section{PROJECTS \& \\ EXPERIENCE} {\sl Android Developer} \hfill Sept 2014 - Present                
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Ontario Border Wait Times:
+                 Developed an application to see the delays for each of the Buffalo/ Niagara Falls bridges
+                 	\begin{itemize} \itemsep -1pt
+    				\item Built on Android Studio  
+    				\item Developed a parser to get the delay time from a live  XML feed
+    				\item Used multi-threading for network requests
+    				\item Built using W3C libraries for parsing
+					\end{itemize}
+                \item Risk Battle Simulator: Developed application for a client
+                	\begin{itemize}  \itemsep -1pt
+                	\item Built with Java math libraries
+                	\item Ported logic from Python
+					\end{itemize}	                	  
+                \end{itemize}
+                
+                {\sl Hackathon project} \\
+                WildHacks 2015 @ Northwestern University, IL \\
+				LogBlocks. A big data visualizer for the Oculus Rift 
+				\begin {itemize} \itemsep -2pt
+				\item Won sponsor api prize
+				\item Worked on the front end development in a team of four
+				\item Developed the api request script in python
+				
+				\end {itemize}
+
+ 
+                {\sl Sales Associate} \hfill            Nov 2014 - Sept 2015 \\
+                Best Buy Canada, Richmond Hill, ON
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Remarkable knowledge of customer service and experience in sales
+                 \item Highest sales of insurance services in the district [in August 2015]
+                 \item Promoted from seasonal employment to part time employment
+                 \end{itemize} 
+                {\sl Web Developer} \hfill        April 2014 - Sept 2014 \\
+                DECA Westmount (wcideca.com)
+                  \begin{itemize} \itemsep -2pt
+                   \item Worked on a team to develop custom plugins for WordPress
+                   \item Contributed to the creation of a WordPress-based backend for DECA
+                   \item Modified themes to fit site needs 
+                   \end{itemize} 
+                  
+
+
+\section{HOBBIES \& \\ ACTIVITIES}             
+ 			Table Tennis \& Billiards \\
+ 			Hockey 
+ 			\
+
+\end{resume}
+\end{document}
+
+
+
+
