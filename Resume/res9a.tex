@@ -1,9 +1,14 @@
 % LaTeX resume using res.cls
-\documentclass[margin]{res}
+\documentclass[article]{res}
+
+
+\usepackage[margin=0.75in]{geometry}
+\addtolength{\topmargin}{-.225in}
+
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textwidth}{5.1in} % set width of text portion
+%\setlength{\textwidth}{5.1in} % set width of text portion
 %Allows changed margins
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
@@ -14,39 +19,38 @@
 % Center the name over the entire width of resume:
  \moveleft.5\hoffset\centerline{\Huge\bf Sam Kantor}
  \moveleft.5\hoffset\centerline{}
- \begin{changemargin}{-3.1cm}{0.5cm} 
+ \begin{changemargin}{-0.6cm}{0.5cm} 
  {https://play.google.com/store/apps/developer?id=Sam+Kantor \hspace{43 pt} https://github.com/S-Kantor}
   \end{changemargin}
 % Draw a horizontal line 
-\begin{changemargin}{-3.4cm}{2.5cm} 
- {\noindent\rule{17cm}{0.5pt} }\smallskip
+\begin{changemargin}{-0.7cm}{2.5cm} 
+ {\noindent\rule{17cm}{0.5pt} }
  \end{changemargin}
 
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
+
  \moveleft.5\hoffset\centerline{54 Loire Valley Avenue}
  \moveleft.5\hoffset\centerline{Thornhill, ON L4J-8R8}
  \moveleft.5\hoffset\centerline{Phone Number: (647) 713-3674}
 
-
 \begin{resume} 
 
-\section{EDUCATION} {\sl Honours Computer Science Coop}  \\
+\section{SKILLS} {\sl Proficient in:} Python, C, Racket, HTML5, CSS3, Git \\
+{\sl Familiar with:} MySQL, Android, C++, \space \LaTeX \\
+{\sl Platforms:} Windows, Linux (Ubuntu), Mac OS X, Arduino
+
+\section{EDUCATION} {\sl Honours Mathematics Coop} \hfill Sept 2015 - April 2020   \\
                       % \sl will be bold italic in New Century Schoolbook (or
 	              % any postscript font) and just slanted in
 		      %	Computer Modern (default) font
-                University of Waterloo, Waterloo, ON \\
-                Class of 2020 \\
-                
- 
-\section{LANGUAGES} {\sl Proficient in:} Python, C, Racket, HTML5, CSS3 \\
-{\sl Familiar with: MySQL, Android, C++, \space \LaTeX} 
+                University of Waterloo, Waterloo, ON 
  
 				
-\section{PROJECTS \& \\ EXPERIENCE} {\sl Android Developer} \hfill Sept 2014 - Present                
+\section{PROJECTS \&  EXPERIENCE} {\sl Android Developer} \hfill Sept 2014 - Present                
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                  \item Ontario Border Wait Times:
-                 Developed an application to see the delays for each of the Buffalo/ Niagara Falls bridges
+                 Developed an application to see the \\ delays for each of the Buffalo/ Niagara Falls bridges
                  	\begin{itemize} \itemsep -1pt
     				\item Built on Android Studio  
     				\item Developed a parser to get the delay time from a live  XML feed
@@ -64,15 +68,15 @@
                 WildHacks 2015 @ Northwestern University, IL \\
 				LogBlocks. A big data visualizer for the Oculus Rift 
 				\begin {itemize} \itemsep -2pt
-				\item Won sponsor api prize
+				\item Won sponsor API prize
 				\item Worked on the front end development in a team of four
-				\item Developed the api request script in python
+				\item Developed the API request script in python
 				
 				\end {itemize}
 
  
                 {\sl Sales Associate} \hfill            Nov 2014 - Sept 2015 \\
-                Best Buy Canada, Richmond Hill, ON
+                Best Buy Canada @ Richmond Hill, ON
                  \begin{itemize}  \itemsep -2pt %reduce space between items
                  \item Remarkable knowledge of customer service and experience in sales
                  \item Highest sales of insurance services in the district [in August 2015]
@@ -88,11 +92,9 @@
                   
 
 
-\section{HOBBIES \& \\ ACTIVITIES}             
- 			Table Tennis \& Billiards \\
- 			Hockey 
- 			\
-
+\section{HOBBIES \&  ACTIVITIES}             
+ 			Hobbies: Table Tennis, Billiards, Baseball \\
+			Interests: Fantasy Hockey, Home Automation (Raspberry Pi \& Tasker), Travel 			
 \end{resume}
 \end{document}
 
