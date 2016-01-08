@@ -3,6 +3,97 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+\newcounter{Theorem}
+
+\newtheorem{theorem}{theorem}[Theorem]
+\newtheorem{example}[theorem]{Example}
+
 \begin{document}
 
+\begin{center}
+\Huge{Integration by Parts [IBP]} \\
+\large{Sam Kantor \\ Instructor Jordan Hamilton} \\
+\large{Date: January 6st, 2016}
+\end{center}
+
+\textbf{Section 7.1} \\
+
+Let u, v be functions of x.\\ By product rule, the derivative of UV = $\frac{du}{dx} \cdot V$ + $\frac{dv}{dx} \cdot U$ \\
+Now let's integrate: $\int \frac{d}{dx} (UV)\cdot dx$ = $\int \frac{du}{dx} \cdot V\cdot dx$ + $\int U\cdot \frac{du}{dx}\cdot dx$ \\ \\
+This results in the following \textbf{formula} which is used for integration by parts. \\
+
+   $$UV = \int U\cdot dv + \int U\cdot du$$
+
+\textbf{Strategies for when to choose U \& V}
+\begin{itemize}
+\item Choose U to be the simpler function when it's differentiated 
+\item Pick DV (derivative of V) to be the harder function, that you know how to integrate
+\end{itemize}
+
+Good strategies for picking an integration technique, use \textbf{"I LATE"} \\
+Goes from hardest to easiest.
+
+\begin{itemize}
+\item I = inverse trig functions
+\item L = Log functions
+\item A = Algebraic functions/ all polynomials
+\item T = Trig functions
+\item E = Exponential functions
+\end{itemize}
+
+\begin{example}
+1 \\
+\begin{minipage}{.5\textwidth} %
+
+\begin{align*}
+\int x^2\cdot lnx \cdot dx & = \frac{x^3}{3} \cdot lnx - \int \frac{x^3}{3} \cdot \frac{1}{x} \cdot dx  \\
+&=  \frac{x^3}{3} \cdot lnx - \int \frac{x^2}{3} \cdot dx  \\
+&= \frac{x^3}{3} \cdot lnx - \frac{x^3}{4} + C\\  
+\end{align*}
+
+\end{minipage} %
+\begin{minipage}{.5\textwidth} %
+$$ Let \ \ u = ln x. \     \ Let \ \ dv = x^2dx $$
+$$ du = \frac{1}{x} dx = ln x. \     \ v =\frac{x^3}{3} dx $$
+\end{minipage}
+
+\end{example}
+
+
+\begin{example}
+2 \\
+\begin{minipage}{.5\textwidth} %
+
+\begin{align*}
+\int lnx \cdot dx & = x \cdot lnx - \int \frac{x^3}{3} \cdot x \\
+&= x \cdot lnx  - \int dx  \\
+&= x \cdot lnx - x + C\\  
+\end{align*}
+
+\end{minipage} %
+\begin{minipage}{.5\textwidth} %
+$$ Let \ \ u = ln x. \     \ Let \ \ dv = dx $$
+$$ du = \frac{1}{x} dx = ln x. \     \ v = x  $$
+
+\end{minipage}
+\newpage
+\end{example}
+\begin{example}
+3 \\
+\begin{minipage}{.5\textwidth} %
+
+\begin{align*}
+\int x^2\cdot \cos{x} \cdot dx & = x^2\cdot \sin {x} - \int 2x \sin {x} \cdot dx  \\  
+\end{align*}
+
+\end{minipage} %
+\begin{minipage}{.5\textwidth} %
+$$ Let \ \ u = x^2. \     \ Let \ \ dv = \cos{x}dx $$
+$$ du = 2xdx \     \ v = \sin x dx $$
+\end{minipage}
+
+\end{example}
+\begin{center}
+\Large{Do IBP again!}
+\end{center}
 \end{document}
