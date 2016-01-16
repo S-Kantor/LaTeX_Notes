@@ -1,0 +1,99 @@
+\documentclass{letter}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcounter{Theorem}
+
+\newtheorem{theorem}{Theorem}[Theorem]
+\newtheorem{example}{Example}[Theorem]
+
+\begin{document}
+
+\stepcounter{Theorem}
+
+\begin{center}
+\Huge{Basis and Subspaces} \\
+\large{Sam Kantor \\ Instructor Dan Wolczuk} \\
+\large{Date: January 11th, 2016}
+\end{center}
+
+\begin{theorem} .5\\
+If $\mathbb{B} = \left\lbrace \vec {v}_1, \ldots, \vec{v}_k \right\rbrace$ is a basis for a subset S of $\mathbb{R}^n$, then every vector $\vec{x} \in \mathbb{S}$, can be written as a unique linear combination of $\vec {v}_1, \ldots, \vec{v}_k$. \\
+\textbf{Proof left as exercise} \\
+
+\end{theorem}
+
+\textbf{Definition} \\
+In $\mathbb{R}^n, $ let $\vec{e}_i$ represent the vector whose i'th component is 1 and all other components are 0. The set $\left\lbrace \vec {e}_1, \ldots, \vec{e}_n \right\rbrace$ is called the \textbf{standard} basis for $\mathbb{R}^n$ \\
+
+\begin{example} .1 \\
+Standard Basis for $\mathbb{R}^2 $is $\left\lbrace \vec {e}_1, \vec{e}_2 \right\rbrace $ = 
+$ \left [\begin{matrix}
+    1 \\ 0
+\end{matrix}\right]$,
+$\left[\begin{matrix}
+    0 \\ 1
+\end{matrix}\right]$
+
+\end{example}
+
+\begin{example} .2 \\
+Standard Basis for $\mathbb{R}^3 $is $\left\lbrace \vec {e}_1, \vec{e}_2, \vec{e}_3 \right\rbrace $ = 
+$ \left [\begin{matrix}
+    1 \\ 0 \\ 0
+\end{matrix}\right]$,
+$ \left [\begin{matrix}
+    0 \\ 1 \\ 0
+\end{matrix}\right]$,
+$ \left [\begin{matrix}
+    0 \\ 0 \\ 1
+\end{matrix}\right]$
+\end{example}
+
+\textbf{Definition} \\
+A basis is a different coordinate system. 
+\begin{example} .3\\
+Prove that $\mathbb{B} = \left [\begin{matrix}
+    1 \\ 0
+\end{matrix}\right]$,
+$\left[\begin{matrix}
+    1 \\ 2
+\end{matrix}\right]$ is a basis for $\mathbb{R}^2$ \\
+Solution: By the theorem, we have that $\mathbb{B}$ is linearly independent since neither vector is a scalar multiple of the other.
+\\
+To show spanning: \\
+Let $\vec{x} = \left [\begin{matrix}
+    \vec{x}_1 \\ \vec{x}_2
+\end{matrix}\right] \in \mathbb{R}^2$. Consider
+\begin{align*}
+\left [\begin{matrix}
+    \vec{x}_1 \\ \vec{x}_2
+\end{matrix}\right] = C_1 \cdot \left [\begin{matrix}
+    1 \\ 1
+\end{matrix}\right] + C_2 \cdot \left [\begin{matrix}
+    1 \\ 2
+\end{matrix}\right] = \left [\begin{matrix}
+    C_1 + C_2 \\ C_1 + 2 C_2
+\end{matrix}\right]
+\end{align*}
+$X_1 = C_1 + C_2, X_2 = C_1 + 2 C_2$. Solving, $C_2 = x_2 - x_1$ and $C_1 = 2 X_1 - X_2$. $\therefore$ every $\vec{x} \in \mathbb{R}^2 $ can be written as a linear combination of the vectors in $\mathbb{B}$.
+\end{example}
+
+\Large{\textbf{Surfaces in Higher Dimensions}} \\
+We can extend over geometrical concepts of lines and planes to $\mathbb{R}^n$ with $\vec{m} \neq \vec{0}$ for n $>$ 3. \\
+
+\textbf{Definition} \\
+Let $\vec{m}, \vec{b} \in \mathbb{R}^n$, with $\vec{m} \neq \vec{0}$. We call the set with vector equation $\vec{x} = c_1 \cdot \vec{m} + \vec{b}, c_1 \in \mathbb{R}$ a line in $\mathbb{R}^n$ which passes through $\vec{1}$.
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
